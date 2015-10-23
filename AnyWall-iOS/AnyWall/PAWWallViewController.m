@@ -38,7 +38,7 @@ PAWWallPostCreateViewControllerDataSource>
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Anywall";
+        self.title = @"Hot Hut";
 
         _annotations = [[NSMutableArray alloc] initWithCapacity:10];
         _allPosts = [[NSMutableArray alloc] initWithCapacity:10];
@@ -289,7 +289,7 @@ PAWWallPostCreateViewControllerDataSource>
         case kCLAuthorizationStatusDenied:
             NSLog(@"kCLAuthorizationStatusDenied");
         {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Anywall can’t access your current location.\n\nTo view nearby posts or create a post at your current location, turn on access for Anywall to your location in the Settings app under Location Services." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"HotHut can’t access your current location.\n\nTo view nearby posts or create a post at your current location, turn on access for HotHut to your location in the Settings app under Location Services." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alertView show];
             // Disable the post button.
             self.navigationItem.rightBarButtonItem.enabled = NO;
